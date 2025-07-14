@@ -1,0 +1,12 @@
+set_1 = set(range(10))
+print(set_1)
+set_2 = set(range(1, 11))
+print(set_2)
+print(set_1 and  set_2)
+print(set_1 | set_2)
+print(set_1 & set_2)
+print(set_1 ^ set_2)
+print(set_1 ^ set_2)
+
+tuple_1 = tuple(range(10))
+print(tuple_1)

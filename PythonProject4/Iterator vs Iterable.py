@@ -1,0 +1,8 @@
+lis = list(range(10))
+myiter = iter(lis)
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
