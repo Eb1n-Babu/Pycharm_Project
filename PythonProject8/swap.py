@@ -79,3 +79,15 @@ def new_func(func):
 def say_hello():
     print("Hello, EBIN!")
 say_hello()
+
+y = {x:x**2 for x in range(10) if x % 2 == 0}
+print(y)
+
+
+c = 0
+while c < 10:
+    print(c)
+    c += 1
+
+a = lambda s,h : s*h
+print(a(2,3))
