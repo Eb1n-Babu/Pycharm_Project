@@ -1,5 +1,3 @@
-from PythonProject1.demo_project.string import count
-
 
 class hello:
     @staticmethod
@@ -28,3 +26,12 @@ for i in range (len(input_str)):
         else:
             count += 1
     print(count)
+
+x = 1
+
+
+def func():
+    global x;
+    x = 2
+
+print(func())

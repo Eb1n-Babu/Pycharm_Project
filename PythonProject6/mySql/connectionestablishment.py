@@ -5,7 +5,7 @@ connection = mysql.connector.connect(
     host="localhost",
     user="root",
     password="@Ebinbabu2209",
-    database="db1"
+    database="db"
 )
 
 # Check if connection is successful
