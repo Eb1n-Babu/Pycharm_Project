@@ -1,5 +1,8 @@
 #1. Why would you use the 11pass11 statement?
+import copy
 from itertools import groupby
+
+from Demos.SystemParametersInfo import orig_value
 
 
 def add(a,b):
@@ -367,3 +370,24 @@ for i,group in groupby(x):
 word = "Alignerr"
 print("")
 print(word[-3:])
+
+xf = [11,12,13,14,15,16,17,18]
+for x,elements in enumerate(xf,start=10):
+    print(f"{x}{elements}")
+
+for value, element in enumerate(xf,start=10):
+    print(value," = ",element)
+
+original = [1,2,3,4,5,6,7,8]
+
+shallow_copy = copy.copy(original)
+print(original)
+print(shallow_copy)
+print("===============")
+shallow_copy.append(10)
+print(shallow_copy)
+print(original)
+print("============================")
+original.append(10)
+print(original)
+print(shallow_copy)
