@@ -391,3 +391,44 @@ print("============================")
 original.append(10)
 print(original)
 print(shallow_copy)
+
+h1 = "hello"
+def palindrome_check(words):
+    x = words[::-1]
+    if x.strip().lower().replace(" ","") == words.strip().lower().replace(" ",""):
+        return True
+    else:
+        return False
+print(palindrome_check("hello"))
+print(palindrome_check(" malaya  lam"))
+
+def prime_number(string):
+    if string>=2:
+        for i in range(2,string):
+            if string%i==0:
+                return False
+            else:
+                continue
+        return True
+    else:
+        return False
+
+print(prime_number(5))
+print(prime_number(2))
+print(prime_number(3))
+print(prime_number(6))
+print(prime_number(7))
+
+for i in range(100):
+    if prime_number(i):
+        print(i)
+    else:
+        continue
+
+def fact(stre):
+    factorial = 1
+    for i in range(1,stre+1):
+        factorial *= i
+    return factorial
+
+print(fact(5))
